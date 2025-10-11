@@ -878,11 +878,6 @@ body::before {
     .service-card p {
     display: none;
     }
-
-    .main-content {
-    padding-left: 10px;
-    padding-right: 10px;
-    }
     
     /* === ABOUT ME SECTION === */
     .about-image-content {
@@ -907,7 +902,7 @@ body::before {
             grid-template-columns: 1fr;
         } */
          .footer {
-            padding: 90px 0 0; /* padding disesuaikan biar gak offset */
+            padding: 90px 10px 0; /* padding disesuaikan biar gak offset */
         }
         .footer-container {
             grid-template-columns: 1fr; /* 1 kolom aja di layar kecil */
