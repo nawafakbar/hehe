@@ -1,0 +1,490 @@
+/* ========================= */
+/* MAIN CONTENT BACKGROUND */
+/* ========================= */
+
+.main-content {
+    background-color: #001200;
+    padding-bottom: 80px;
+}
+
+/* ========================= */
+/* SERVICES SECTION */
+/* ========================= */
+
+.services-section {
+    min-height: 100vh;
+    padding: 80px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Agar konten berada di tengah secara vertikal */
+}
+
+.services-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.view-all-button {
+    padding: 8px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 100px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.view-all-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: white;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service-card {
+    background-color: #011a01; /* Warna kartu sedikit lebih terang dari background */
+    border: 1px solid rgba(0, 200, 0, 0.2); /* Border hijau transparan */
+    padding: 35px 30px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Ini adalah style untuk card yang disorot seperti di contoh */
+/* Kamu bisa hapus ini jika hanya mau efek hover */
+.service-card.highlighted {
+    background-color: #004d00; /* Warna hijau lebih pekat */
+    transform: translateY(-10px);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    background: url('img/bghijau.png') center/cover no-repeat; /* Efek background sama seperti card project */
+    border-color: rgba(0, 200, 0, 0.5);
+}
+
+.service-icon {
+    margin-bottom: 20px;
+}
+
+.service-icon i {
+    font-size: 3rem;
+    color: #00C800; /* Warna hijau utama */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.service-card:hover .service-icon i {
+    transform: scale(1.1);
+    color: #ffffff;
+}
+
+.service-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.service-card p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+/* ========================= */
+/* RESPONSIVE FOR SERVICES */
+/* ========================= */
+
+/* Untuk Tablet & HP (992px ke bawah) */
+@media (max-width: 992px) {
+
+    .services-section {
+    min-height: 100vh;
+    padding: 80px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Agar konten berada di tengah secara vertikal */
+    }
+
+    .services-section {
+        padding: 60px 40px;
+    }
+    .services-header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* Tetap 2 kolom */
+    }
+
+    .service-card h3 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+    }
+
+    .service-card p {
+    display: none;
+    }
+}
+
+/* Penyesuaian padding untuk HP agar tidak terlalu mepet */
+@media (max-width: 600px) {
+    .services-section {
+    min-height: 100vh;
+    padding: 80px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Agar konten berada di tengah secara vertikal */
+    }
+
+    .services-section {
+        padding: 50px 20px;
+    }
+
+    .service-card h3 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+    }
+
+    .service-card p {
+    display: none;
+    }
+}
+
+/* ========================= */
+/* ABOUT ME SECTION */
+/* ========================= */
+
+.about-me-section {
+    padding: 120px 70px;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.about-me-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+}
+
+.about-text-content {
+    flex: 1; /* Biarkan teks mengambil ruang yang dibutuhkan */
+    max-width: 550px; /* Batasi lebar teks agar mudah dibaca */
+}
+
+.about-image-content {
+    flex-shrink: 0; /* Mencegah gambar menyusut */
+    width: 450px; /* Ukuran gambar yang tetap */
+}
+
+.about-image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px; /* Radius sama dengan card lainnya */
+    object-fit: cover;
+    border: 1px solid rgba(0, 200, 0, 0.2); /* Border hijau tipis */
+}
+
+.pre-title {
+    color: #00C800; /* Warna hijau khas kamu */
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.about-me-section .section-title {
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+}
+
+.about-description {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* ========================= */
+/* RESPONSIVE FOR ABOUT ME */
+/* ========================= */
+
+@media (max-width: 992px) {
+    .about-me-section {
+        padding: 80px 40px;
+        min-height: auto;
+    }
+    .about-me-container {
+        flex-direction: column; /* Tumpuk vertikal di tablet */
+        text-align: center;
+    }
+    .about-text-content {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    .about-image-content {
+        width: 80%; /* Lebarkan gambar sedikit */
+        max-width: 450px;
+    }
+    .about-me-section .section-title {
+        font-size: 2.2rem;
+    }
+    .about-description {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-me-section {
+        padding: 60px 20px;
+    }
+    .about-image-content {
+        width: 100%;
+    }
+    .about-description {
+        text-align: justify;
+    }
+}
+
+/* ========================= */
+/* CTA SECTION */
+/* ========================= */
+
+.cta-section {
+    padding: 80px 40px; /* Padding disesuaikan */
+    margin: 0 70px; /* Margin atas/bawah dan kiri/kanan */
+    background-color: #011a01; /* Diubah agar sama dengan service card */
+    border: 1px solid rgba(0, 200, 0, 0.2);
+    border-radius: 12px; /* Radius disamakan */
+    text-align: center;
+    /* ANIMASI UTAMA */
+    transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+
+.cta-section:hover {
+    transform: translateY(-10px); /* Efek mengangkat kartu */
+    background: url('img/bghijau.png') center/cover no-repeat; /* Background berubah */
+    border-color: rgba(0, 200, 0, 0.5); /* Border menjadi lebih jelas */
+}
+
+.cta-content h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+.cta-link {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+.cta-link:hover {
+    color: #00C800;
+    border-bottom-color: #00C800;
+    transform: translateY(-2px);
+}
+
+.cta-link i {
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.cta-link:hover i {
+    transform: translateX(5px);
+}
+
+
+/* ========================= */
+/* FOOTER SECTION */
+/* ========================= */
+
+.footer {
+    padding: 50px 70px 20px 70px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr); /* Kolom pertama lebih besar */
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-column p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+}
+
+.social-icons a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00C800;
+    transform: translateY(-3px);
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-column ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+}
+
+.footer-column ul i {
+    margin-right: 10px;
+    color: #00C800;
+}
+
+.subscribe-form {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.subscribe-form input {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    border-radius: 7px 0 0 7px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.subscribe-form button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #00C800; /* Warna hijau khas kamu */
+    color: #000000;
+    font-weight: 600;
+    border-radius: 0 7px 7px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+    background-color: #00ff00;
+}
+
+.subscribe-note {
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.footer-bottom-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: #ffffff;
+}
+
+/* ========================= */
+/* RESPONSIVE FOR CTA & FOOTER */
+/* ========================= */
+
+@media (max-width: 992px) {
+    .cta-section {
+        margin: 80px 40px; /* Diubah */
+    }
+    .cta-content h2 {
+        font-size: 2.2rem;
+    }
+    .footer {
+        padding: 60px 40px 20px 40px;
+    }
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .cta-section {
+        margin: 60px 20px;
+        padding: 60px 20px;
+    }
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+    .footer {
+        padding: 50px 20px 20px 20px;
+    }
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .footer-bottom-links {
+        display: flex;
+        gap: 20px;
+    }
+    .footer-bottom-links a {
+        margin-left: 0;
+    }
+}
