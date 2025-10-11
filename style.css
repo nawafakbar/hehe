@@ -893,13 +893,8 @@ body::before {
     .about-me-section .section-title {
     font-size: 2rem;
     margin-bottom: 25px;
-}   
+    }   
 
-    /* === CTA & FOOTER === */
-    @media (max-width: 768px) { /* Ini sebaiknya digabung ke sini */
-        body {
-            overflow-x: hidden; /* Pastikan gak offset */
-        }
         .cta-section {
             margin: 60px 20px;
             padding: 60px 20px;
@@ -915,7 +910,7 @@ body::before {
         }
         .footer-container {
             grid-template-columns: 1fr; /* 1 kolom aja di layar kecil */
-            gap: 30px;
+            gap: 60px;
             margin-bottom: 40px;
         }
         .footer-bottom {
@@ -926,7 +921,8 @@ body::before {
         .footer-bottom-links {
             margin-top: 10px;
         }
-    }
+
+
 }
 
 
