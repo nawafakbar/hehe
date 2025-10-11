@@ -897,9 +897,12 @@ body::before {
 
     /* === CTA & FOOTER === */
     @media (max-width: 768px) { /* Ini sebaiknya digabung ke sini */
+        body {
+            overflow-x: hidden; /* Pastikan gak offset */
+        }
         .cta-section {
-        margin: 60px 20px;
-        padding: 60px 20px;
+            margin: 60px 20px;
+            padding: 60px 20px;
         }
         .cta-content h2 {
             font-size: 1.2rem;
@@ -907,16 +910,21 @@ body::before {
         /* .footer-container {
             grid-template-columns: 1fr;
         } */
+         .footer {
+            padding: 40px 20px 20px 20px; /* padding disesuaikan biar gak offset */
+        }
         .footer-container {
-            display: grid;
-            grid-template-columns: 1fr; /* Kolom pertama lebih besar */
+            grid-template-columns: 1fr; /* 1 kolom aja di layar kecil */
             gap: 30px;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
         }
         .footer-bottom {
             flex-direction: column;
-            gap: 15px;
             text-align: center;
+            gap: 10px;
+        }
+        .footer-bottom-links {
+            margin-top: 10px;
         }
     }
 }
