@@ -904,9 +904,14 @@ body::before {
         .cta-content h2 {
             font-size: 1.2rem;
         }
-        .footer-container {
+        /* .footer-container {
             grid-template-columns: 1fr;
-            gap: 40px;
+        } */
+        .footer-container {
+            display: grid;
+            grid-template-columns: 1fr; /* Kolom pertama lebih besar */
+            gap: 30px;
+            margin-bottom: 60px;
         }
         .footer-bottom {
             flex-direction: column;
