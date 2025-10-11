@@ -829,7 +829,7 @@ body::before {
     }
 
     .footer-container {
-        padding: 90px 10px 0;
+        padding: 90px 0 0;
         grid-template-columns: repeat(2, 1fr);
     }
 }
