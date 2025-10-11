@@ -4,13 +4,19 @@
 
 /* Latar Belakang & Body */
 body {
-    /* Menggunakan background yang sama dengan main-content untuk konsistensi */
-    background: linear-gradient(
-        to bottom, #002100 0%, #000000 20%, #000000 80%, #002100 100%
-    );
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-    background-size: 100% 100vh;
+    background: url('img/bgdetail.jpeg') no-repeat center center fixed;
+    background-size: cover; /* Biar full layar */
+    color: #ffffff; /* Tetap pakai warna teks putih */
+    position: relative;
+}
+
+/* Tambahkan overlay gelap biar teks tetap kebaca */
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8); /* overlay hitam transparan */
+    z-index: -1;
 }
 
 /* Header & Tombol Kembali */
