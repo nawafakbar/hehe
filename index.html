@@ -12,9 +12,23 @@
 
     <link rel="stylesheet" href="style.css">
     <style>
+        /* Default: show desktop, hide mobile */
+        .show-desktop {
+            display: inline;
+        }
+
+        .show-mobile {
+            display: none;
+        }
+
+        /* Mobile: hide desktop, show mobile */
         @media (max-width: 768px) {
-            .hide-mobile {
+            .show-desktop {
                 display: none;
+            }
+            
+            .show-mobile {
+                display: inline;
             }
         }
     </style>
@@ -30,9 +44,12 @@
                 <a href="#about">about</a>
                 <a href="#card">portfolio</a>
                 <a href="#contact">contact</a>
-                <a href="https://prasetia.sg.larksuite.com/docx/SMxsdrpLFoQGybxAiA4lXADDg6e" target="_blank">
-                docs<span class="hide-mobile"> by me</span>
-            </a>
+                <a href="https://prasetia.sg.larksuite.com/docx/SMxsdrpLFoQGybxAiA4lXADDg6e" 
+                target="_blank" 
+                class="show-desktop">docs by me</a>                
+                <a href="https://prasetia.sg.larksuite.com/docx/SMxsdrpLFoQGybxAiA4lXADDg6e" 
+                target="_blank" 
+                class="show-mobile">docs</a>
             </div>
         </nav>
         <p class="text-intro">👋Hey, I'm Nawaf Akbar</p>
